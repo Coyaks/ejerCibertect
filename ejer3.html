@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        .container .caja{
+            display: inline-block;
+            width: 225px;
+            height:225px;
+            background-color:aqua;
+        }
+        .caja img{
+            width: 225px;
+            height:225px;
+        }
+        .caja h2{
+            text-align: center;
+        }
+    </style>
+
+    <title>Ejer 3</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caja">
+            <div class="c1" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+                <img src="img/boy.png" alt="">
+                <h2>Imagen 1</h2>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="c2" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+                <img src="img/girl.png" alt="">
+                <h2>Imagen 2</h2>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="c3" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+                <img src="img/boy.png" alt="">
+                <h2>Imagen 3</h2>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="c4" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+                <img src="img/girl.png" alt="">
+                <h2>Imagen 4</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mouseOver1(){
+            document.querySelector(".c1 h2").style.visibility = "visible";
+        }
+        function mouseOut1(){
+            document.querySelector(".c1 h2").style.visibility = "hidden";
+        }
+
+        function mouseOver2(){
+            document.querySelector(".c2 h2").style.visibility = "visible";
+        }
+        function mouseOut2(){
+            document.querySelector(".c2 h2").style.visibility = "hidden";
+        }
+
+        function mouseOver3(){
+            document.querySelector(".c3 h2").style.visibility = "visible";
+        }
+        function mouseOut3(){
+            document.querySelector(".c3 h2").style.visibility = "hidden";
+        }
+
+        function mouseOver4(){
+            document.querySelector(".c4 h2").style.visibility = "visible";
+        }
+        function mouseOut4(){
+            document.querySelector(".c4 h2").style.visibility = "hidden";
+        }
+    </script>
+
+</body>
+
+</html>
